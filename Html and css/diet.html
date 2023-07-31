@@ -1,145 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Diet Page</title>
-    <style>
-        /* Reset some default styles */
-        body, h1, p {
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-        }
-
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 10px;
-            text-align: center;
-        }
-
-        nav {
-            background-color: #f4f4f4;
-            padding: 10px;
-            text-align: center;
-        }
-
-        nav a {
-            display: inline-block;
-            color: #333;
-            text-decoration: none;
-            margin: 5px;
-            padding: 5px 10px;
-        }
-
-        nav a:hover {
-            background-color: #333;
-            color: #fff;
-        }
-
-        /* Search bar styles */
-        nav form {
-            display: inline-block;
-        }
-
-        nav input[type="text"] {
-            padding: 5px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-
-        nav input[type="submit"] {
-            padding: 5px 10px;
-            background-color: #333;
-            color: #fff;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
-        .container {
-            max-width: 960px;
-            margin: 20px auto;
-            padding: 20px;
-        }
-
-        .diet-plan {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-            margin-top: 20px;
-        }
-
-        .diet-plan .meal {
-            width: 300px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            padding: 10px;
-            margin: 10px;
-        }
-
-        .diet-plan h2 {
-            margin-bottom: 10px;
-            font-size: 1.2rem;
-        }
-
-        .diet-plan p {
-            margin-bottom: 10px;
-        }
-
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px;
-            position: absolute;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fitness Website</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <header>
-        <h1>Diet Page</h1>
-    </header>
+    <header style="background-image: linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.75)),url(https://post.healthline.com/wp-content/uploads/2020/09/vegetarian-diet-plan-732x549-thumbnail.jpg); background-repeat: no-repeat;  background-size:100%;
+  background-position: center; height: 600px;">
+    <nav >
+        <div class="logo" ><span style="color:#9ed4f5;">CARE-A-MEDICS</span></div>
+       <ul>
+          <li ><a href="index.html" style="color: rgb(247, 244, 244);">Home</a></li>
+          <li><a href="disease.html" style="color: rgb(232, 229, 229);">Medical Conditions</a></li>
+          <li><a href="diet.html" style="color: rgb(243, 240, 240);">Diet Plan</a></li>
+          <li><a href="workout.html" style="color: rgb(252, 246, 246);">Workouts</a></li>
+         
+          <li><a href="#" style="color: rgb(245, 242, 242);">Contact</a></li>
+        </ul>
+      </nav>
+      <main>
+          <h1 style="color: rgb(228, 224, 224);">Your Deit Plan</h1><br>
 
-    <nav>
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
-        <form action="#" method="get">
-            <input type="text" placeholder="Search...">
-            <input type="submit" value="Search">
-        </form>
-    </nav>
-
-    <div class="container">
-        <h2>Sample Diet Plan</h2>
-        <div class="diet-plan">
+        <section class="diet-plan">
+            
             <div class="meal">
-                <h2>Breakfast</h2>
+                <h3>Breakfast</h3>
                 <p>Option 1: Oatmeal with fruits</p>
                 <p>Option 2: Greek yogurt with nuts and honey</p>
             </div>
 
             <div class="meal">
-                <h2>Lunch</h2>
+                <h3>Lunch</h3>
                 <p>Option 1: Grilled chicken with quinoa</p>
                 <p>Option 2: Mixed vegetable salad</p>
             </div>
 
             <div class="meal">
-                <h2>Dinner</h2>
+                <h3>Dinner</h3>
                 <p>Option 1: Baked salmon with steamed vegetables</p>
                 <p>Option 2: Brown rice with stir-fried tofu</p>
             </div>
-        </div>
-    </div>
+        </section>
+
+        <section class="tips">
+            <h2>Diet Tips</h2>
+            <ul>
+                <li>Eat a variety of fruits and vegetables.</li>
+                <li>Stay hydrated by drinking plenty of water.</li>
+                <li>Avoid sugary and processed foods.</li>
+                <li>Include lean proteins in your meals.</li>
+                <li>Limit your intake of unhealthy fats and oils.</li>
+            </ul>
+        </section>
+    </main>
 
     <footer>
         <p>&copy; 2023 Diet Page. All rights reserved.</p>
